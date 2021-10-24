@@ -376,7 +376,7 @@ model = naiveBayes(Class~ABV+IBU,data = train)
 confusionMatrix(table(predict(model,validate[,c(1,2)]),as.factor(validate$Class)))
 ```
 
-###Other Useful Inference: Most  numerous style of beer in each State. 
+### Other Useful Inference: Most  numerous style of beer in each State. 
 ##### Many states had ties.
 ##### We discovered that in a majority of states the most popular style of beer (measured by number of individual beers of each style by state) was American IPA.
 ##### Then we looked at the prevalence of American IPA's in all the states. While some states such as California, Indiana, Oregon, and Washington have an abundance of choices of American IPA's, much of the US does not have the same production of unique IPA's. This could be an untapped market. As American IPA clearly seems to be the favorite beer amongst Americans, some parts of the country may not have the variety of American IPA's that other parts do. 
